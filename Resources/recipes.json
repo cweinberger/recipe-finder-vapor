@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Pasta Speciale",
+    "ingredients": [
+      "Pasta",
+      "Tomato",
+      "Water",
+      "Apple"
+    ],
+    "description": "This is my fancy description",
+    "instructions": "Do this,then that..."
+  },
+  {
+    "name": "Pasta Speciale",
+    "ingredients": [
+      "Pasta",
+      "Tomato",
+      "Water",
+      "Apple"
+    ],
+    "description": "This is my fancy description",
+    "instructions": "Do this,then that..."
+  }
+]
