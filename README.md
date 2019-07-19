@@ -29,8 +29,12 @@ Imports recipes from a json file within the `Resources` folder into Elasticsearc
 Usage:  `elastic:importRecipes {fileName}`
 Example:  `elastic:importRecipes recipes.json`
 
+## Trying out request
+
+All requests can be tested using `cURL`, or alternatively using the Paw Mac app using the .paw collection uploaded to this repository: `vapor-elasticsearch.paw`
+
 ## Todos
 
-- [ ] Wrap ElasticsearchClient into a Vapor Service
+- [ ] Wrap `ElasticsearchClient` into a Vapor `Service`
 - [ ] Add bigger set of recipes for the initial import
 - [ ] Decide if we want to use bulk import for the intial import or leave this for another tutorial
