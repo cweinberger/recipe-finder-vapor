@@ -32,11 +32,11 @@ public struct ImportRecipesCommand: Command {
       throw Abort(.badRequest, reason: "Could not parse JSON into recipes")
     }
 
-    let elasticClient = ElasticsearchClient(host: "http://localhost", port: 9200)
+    let elasticClient = ElasticsearchClient(host: "localhost", port: 9200)
 
     let lazyFutures: [LazyFuture<ESCreateDocumentResponse>] = recipes.map { recipe in
       return {
-        return try elasticClient.createDocument(document: recipe, in: "recipes", on: context.container)
+        return try elasticClient.createDocument(recipe, in: "recipes", on: context.container)
       }
     }
 

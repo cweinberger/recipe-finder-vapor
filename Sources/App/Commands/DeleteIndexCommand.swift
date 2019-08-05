@@ -17,7 +17,7 @@ public struct DeleteIndexCommand: Command {
       throw Abort(.badRequest, reason: "indexName argument is missing")
     }
 
-    let elasticClient = ElasticsearchClient(host: "http://localhost", port: 9200)
+    let elasticClient = ElasticsearchClient(host: "localhost", port: 9200)
     return try elasticClient.deleteIndex(indexName, on: context.container).map { response in
       if response == .ok {
         print("Deleted index with name: `\(indexName)`")

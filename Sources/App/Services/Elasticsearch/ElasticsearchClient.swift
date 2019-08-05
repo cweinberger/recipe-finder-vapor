@@ -99,7 +99,7 @@ extension ElasticsearchClient {
 // MARK: Requests
 extension ElasticsearchClient {
 
-  public func createDocument<Document: Encodable>(document: Document, in indexName: String, on container: Container) throws -> Future<ESCreateDocumentResponse> {
+  public func createDocument<Document: Encodable>(_ document: Document, in indexName: String, on container: Container) throws -> Future<ESCreateDocumentResponse> {
     let url = baseURL(path: "/\(indexName)/_doc")
     var request = try HTTPRequest(method: .POST, url: url, body: ElasticsearchClient.jsonEncoder.encode(document))
     request.contentType = .json
@@ -127,7 +127,7 @@ extension ElasticsearchClient {
     return try sendRequest(request, to: url, on: container)
   }
 
-  public func updateDocument<Document: Encodable>(document: Document, id: String, in indexName: String, on container: Container) throws -> Future<ESUpdateDocumentResponse> {
+  public func updateDocument<Document: Encodable>(_ document: Document, id: String, in indexName: String, on container: Container) throws -> Future<ESUpdateDocumentResponse> {
     let url = baseURL(path: "/\(indexName)/_doc/\(id)")
     var request = try HTTPRequest(method: .PUT, url: url, body: ElasticsearchClient.jsonEncoder.encode(document))
     request.contentType = .json
