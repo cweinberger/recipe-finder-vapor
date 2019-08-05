@@ -1,24 +1,22 @@
 [
   {
-    "name": "Pasta Speciale",
+    "name": "Apple Cake",
     "ingredients": [
-      "Pasta",
-      "Tomato",
-      "Water",
-      "Apple"
+      "Apple",
+      "Cake"
     ],
-    "description": "This is my fancy description",
-    "instructions": "Do this,then that..."
+    "description": "As easy as apple pie.",
+    "instructions": "Mix Apple with Cake."
   },
   {
     "name": "Pasta Speciale",
     "ingredients": [
       "Pasta",
       "Tomato",
-      "Water",
-      "Apple"
+      "Basil",
+      "Top secret ingredient"
     ],
-    "description": "This is my fancy description",
-    "instructions": "Do this,then that..."
+    "description": "Mario's favorite pasta.",
+    "instructions": "Ask Luigi."
   }
 ]
