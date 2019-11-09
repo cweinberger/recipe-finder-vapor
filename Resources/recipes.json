@@ -6,7 +6,7 @@
       "Cake"
     ],
     "description": "As easy as apple pie.",
-    "instructions": "Mix Apple with Cake."
+    "instructions": "Mix the two apples with one cake."
   },
   {
     "name": "Pasta Speciale",
@@ -18,5 +18,18 @@
     ],
     "description": "Mario's favorite pasta.",
     "instructions": "Ask Luigi."
+  },
+  {
+    "name": "Banana Pie",
+    "ingredients": [
+      "Banana",
+      "Sugar",
+      "Milk",
+      "Vanilla",
+      "Egg yolks",
+      "Baked pastry shell"
+    ],
+    "description": "If you like bananas, this is for you",
+    "instructions": "Mix all the ingredients. Enjoy!"
   }
 ]

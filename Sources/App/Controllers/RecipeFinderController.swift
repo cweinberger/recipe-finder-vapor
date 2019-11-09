@@ -98,7 +98,7 @@ extension RecipeFinderController: RouteCollection {
       throw Abort(.badRequest, reason: "`term` is mandatory")
     }
 
-    let searchTerm = "(name:*\(term)* OR description:*\(term)* OR ingredients:*\(term)*)"
+    let searchTerm = "(name:*\(term)*^5 OR description:*\(term)* OR ingredients:*\(term)*^2)"
 
     return try elasticClient
       .searchDocuments(from: "recipes", searchTerm: searchTerm, on: req)
